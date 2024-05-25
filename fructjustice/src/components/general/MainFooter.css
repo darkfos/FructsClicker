@@ -1,0 +1,38 @@
+.footer_main {
+    background-color: rgb(51, 49, 49);
+    color: orange;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_main > ul {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.attrmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attrmenu > img {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+.attrmenu > a {
+    transition: color 0.7s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+}
+
+
+.attrmenu > a:hover {   
+    color: white;
+}
