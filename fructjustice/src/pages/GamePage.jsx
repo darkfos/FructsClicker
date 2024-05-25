@@ -3,11 +3,11 @@ import GeneralFooter from "../components/general/MainFooter";
 
 export default function MainPage() {
     return (
-        <Fragment>
+        <div className="sd">
             <body>
                 <h2>Fructiszz!</h2>
             </body>
             <GeneralFooter />
-        </Fragment>
+        </div>
     );
 }

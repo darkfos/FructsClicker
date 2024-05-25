@@ -4,7 +4,7 @@ import "./MainFooter.css";
 import banana from "../../static/img/banana.png";
 import tangerine from "../../static/img/tangerine.png";
 import kiwi from "../../static/img/kiwi.png";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function GeneralFooter() {
     return (
@@ -13,7 +13,7 @@ export default function GeneralFooter() {
                 <li>
                     <div className="attrmenu">
                         <img src={banana} alt="Бананчик"/>
-                        <Link to="/">Игра</Link>
+                        <Link to="/game">Игра</Link>
                     </div>
                 </li>
                 <li>

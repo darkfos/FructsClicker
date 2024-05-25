@@ -1,14 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter, Route, Navigate} from "react-router-dom";
+import {BrowserRouter, Route, Navigate, Outlet} from "react-router-dom";
 import MainPage from './pages/GamePage';
+import { Fragment } from 'react';
 
-
-
-//Local
-import GeneralFooter from './components/general/MainFooter';
 
 function App() {
+  return (
+    <Fragment>
+      <Navigate to="/game" />
+      <Outlet />
+    </Fragment>
+  )
 }
 
 export default App;

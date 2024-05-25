@@ -9,12 +9,15 @@ import Profile from './pages/ProfilePage';
 import Shop from './pages/ShopPage';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 const routers = createBrowserRouter([
   {
-    path: "/",
-    element: <MainPage />,
+    path: "",
+    element: <App />,
     children: [
+      {
+        path: "/game",
+        element: <MainPage />
+      },
       {
         path: "/profile",
         element: <Profile />
@@ -26,6 +29,7 @@ const routers = createBrowserRouter([
     ]
   }
 ])
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 	<React.StrictMode>
