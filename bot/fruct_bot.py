@@ -18,9 +18,9 @@ async def start_bot():
     logging.basicConfig(level=logging.INFO)
 
     #settings
-    await set_commands(bot=fruct_bot)
-    await set_descr_and_short_descr(bot=fruct_bot)
-    await set_my_name(bot=fruct_bot)
+    #await set_commands(bot=fruct_bot)
+    #await set_descr_and_short_descr(bot=fruct_bot)
+    #await set_my_name(bot=fruct_bot)
 
     #Include routers
     dp.include_routers(

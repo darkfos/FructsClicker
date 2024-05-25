@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fruct"
+version = "0.1.0"
+description = ""
+authors = ["darkfos82 <darkfos82@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^3.6.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
